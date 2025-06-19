@@ -1,0 +1,143 @@
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .player-song-info {
+        flex: 0 0 250px;
+    }
+    
+    .player-extra {
+        flex: 0 0 200px;
+    }
+    
+    .popup-album {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .album-stats,
+    .album-actions {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 992px) {
+    .sidebar {
+        transform: translateX(-100%);
+    }
+    
+    .sidebar.active {
+        transform: translateX(0);
+    }
+    
+    .main-content {
+        margin-left: 0;
+    }
+    
+    .mobile-menu-btn {
+        display: flex;
+    }
+    
+    .header-search {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+    }
+    
+    .search-bar {
+        min-width: 200px;
+    }
+    
+    .player-bar {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+    
+    .player-song-info,
+    .player-controls,
+    .player-extra {
+        width: 100%;
+        flex: auto;
+        justify-content: center;
+    }
+    
+    .player-song-info {
+        margin-bottom: 15px;
+        justify-content: center;
+    }
+    
+    .player-extra {
+        margin-top: 15px;
+    }
+    
+    body {
+        padding-bottom: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 20px;
+    }
+    
+    .cards-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    
+    .album-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    
+    .carousel-item {
+        flex: 0 0 250px;
+    }
+    
+    .popup-content {
+        width: 95%;
+    }
+    
+    .popup-album {
+        padding: 30px 20px;
+    }
+    
+    .album-info h2 {
+        font-size: 2rem;
+    }
+    
+    .album-info h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .see-all {
+        align-self: flex-end;
+    }
+    
+    .time-range {
+        align-self: flex-end;
+    }
+    
+    .carousel-item {
+        flex: 0 0 200px;
+    }
+    
+    .popup-album img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .album-actions {
+        flex-wrap: wrap;
+    }
+    
+    .album-actions button {
+        flex: 1;
+    }
+}
